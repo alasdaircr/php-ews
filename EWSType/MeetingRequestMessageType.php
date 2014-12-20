@@ -111,7 +111,7 @@ class EWSType_MeetingRequestMessageType extends EWSType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_CalendarItemTypeType
+     * @var \jamesiarmes\PEWS\Enumeration\CalendarItemTypeType
      */
     public $CalendarItemType;
 
@@ -140,7 +140,7 @@ class EWSType_MeetingRequestMessageType extends EWSType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_ConferenceTypeType
+     * @var \jamesiarmes\PEWS\Enumeration\ConferenceType
      */
     public $ConferenceType;
 
@@ -401,7 +401,7 @@ class EWSType_MeetingRequestMessageType extends EWSType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_LegacyFreeBusyType
+     * @var \jamesiarmes\PEWS\Enumeration\LegacyFreeBusyType
      */
     public $IntendedFreeBusyStatus;
 
@@ -639,7 +639,7 @@ class EWSType_MeetingRequestMessageType extends EWSType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_LegacyFreeBusyType
+     * @var \jamesiarmes\PEWS\Enumeration\LegacyFreeBusyType
      */
     public $LegacyFreeBusyStatus;
 

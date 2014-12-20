@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_ConferenceTypeType.
+ * Contains \jamesiarmes\PEWS\Enumeration\ConferenceType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines the type of conferencing that is performed with a calendar item.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_ConferenceTypeType extends EWSType
+class ConferenceType extends Enumeration
 {
     /**
      * The meeting is offline.
@@ -36,21 +40,4 @@ class EWSType_ConferenceTypeType extends EWSType
      * @var integer
      */
     const NET_SHOW = 1;
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

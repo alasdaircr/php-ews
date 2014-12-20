@@ -1,15 +1,19 @@
 <?php
 /**
- * Contains EWSType_AffectedTaskOccurrencesType.
+ * Contains \jamesiarmes\PEWS\Enumeration\AffectedTaskOccurrencesType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines whether a task instance or a task master is deleted by a DeleteItem
  * operation.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_AffectedTaskOccurrencesType extends EWSType
+class AffectedTaskOccurrencesType extends Enumeration
 {
     /**
      * A delete item request deletes the master task, and therefore all
@@ -29,21 +33,4 @@ class EWSType_AffectedTaskOccurrencesType extends EWSType
      * @var string
      */
     const SPECIFIED = 'SpecifiedOccurrenceOnly';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

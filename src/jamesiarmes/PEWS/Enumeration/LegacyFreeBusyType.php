@@ -1,17 +1,19 @@
 <?php
 /**
- * Contains EWSType_LegacyFreeBusyType.
+ * Contains \jamesiarmes\PEWS\Enumeration\LegacyFreeBusyType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Represents the intended status for a calendar item that is associated with a
  * meeting request.
  *
- * @package php-ews\Enumerations
- *
- * @todo Extend EWSType_BusyType.
+ * @package php-ews\Enumeration
  */
-class EWSType_LegacyFreeBusyType extends EWSType
+class LegacyFreeBusyType extends Enumeration
 {
     /**
      * The calendar item represents busy time.
@@ -66,21 +68,4 @@ class EWSType_LegacyFreeBusyType extends EWSType
      * @var string
      */
     const WORKING_ELSEWHERE = 'WorkingElsewhere';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

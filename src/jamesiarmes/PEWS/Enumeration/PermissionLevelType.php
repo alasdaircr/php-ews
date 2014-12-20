@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_PermissionLevelType.
+ * Contains \jamesiarmes\PEWS\Enumeration\PermissionLevelType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Represents the permission level that a user has on a folder.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_PermissionLevelType extends EWSType
+class PermissionLevelType extends Enumeration
 {
     /**
      * Indicates that the user can create and read all items in the folder, and
@@ -109,21 +113,4 @@ class EWSType_PermissionLevelType extends EWSType
      * @var string
      */
     const REVIEWER = 'Reviewer';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_CalendarItemTypeType.
+ * Contains \jamesiarmes\PEWS\Enumeration\CalendarItemTypeType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines the type of a calendar item.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_CalendarItemTypeType extends EWSType
+class CalendarItemTypeType extends Enumeration
 {
     /**
      * The item is an exception to a recurring calendar item.
@@ -45,21 +49,4 @@ class EWSType_CalendarItemTypeType extends EWSType
      * @var string
      */
     const SINGLE = 'Single';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

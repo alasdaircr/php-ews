@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_ConflictResolutionType.
+ * Contains \jamesiarmes\PEWS\Enumeration\ConflictResolutionType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines the type of conflict resolution to try during an update.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_ConflictResolutionType extends EWSType
+class ConflictResolutionType extends Enumeration
 {
     /**
      * If there is a conflict, the update operation will overwrite information.
@@ -37,21 +41,4 @@ class EWSType_ConflictResolutionType extends EWSType
      * @var string
      */
     const NEVER_OVERWRITE = 'NeverOverwrite';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

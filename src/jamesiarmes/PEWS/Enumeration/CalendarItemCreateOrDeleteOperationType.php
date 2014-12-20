@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_CalendarItemCreateOrDeleteOperationType.
+ * Contains \jamesiarmes\PEWS\Enumeration\CalendarItemCreateOrDeleteOperationType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Describes how meeting requests are handled after they are created.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_CalendarItemCreateOrDeleteOperationType extends EWSType
+class CalendarItemCreateOrDeleteOperationType extends Enumeration
 {
     /**
      * The meeting request is sent to all attendees but is not saved in the Sent
@@ -39,21 +43,4 @@ class EWSType_CalendarItemCreateOrDeleteOperationType extends EWSType
      * @var string
      */
     const SEND_TO_NONE = 'SendToNone';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

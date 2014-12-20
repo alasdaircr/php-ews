@@ -1,15 +1,19 @@
 <?php
 /**
- * Contains EWSType_CalendarItemUpdateOperationType.
+ * Contains \jamesiarmes\PEWS\Enumeration\CalendarItemUpdateOperationType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines how meeting updates are communicated after a calendar item is
  * updated.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_CalendarItemUpdateOperationType extends EWSType
+class CalendarItemUpdateOperationType extends Enumeration
 {
     /**
      * The calendar item is updated and the meeting update is sent to all
@@ -60,21 +64,4 @@ class EWSType_CalendarItemUpdateOperationType extends EWSType
      * @var string
      */
     const SEND_TO_NONE = 'SendToNone';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_ ;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this-> _ ;
-    }
 }

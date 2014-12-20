@@ -80,7 +80,7 @@ class EWSType_PermissionType extends EWSType
      *
      * @since Exchange 2007 SP1
      *
-     * @var EWSType_PermissionLevelType
+     * @var \jamesiarmes\PEWS\Enumeration\PermissionLevelType
      */
     public $PermissionLevel;
 
@@ -89,7 +89,7 @@ class EWSType_PermissionType extends EWSType
      *
      * @since Exchange 2007 SP1
      *
-     * @var EWSType_PermissionReadAccessType
+     * @var \jamesiarmes\PEWS\Enumeration\PermissionReadAccessType
      */
     public $ReadItems;
 

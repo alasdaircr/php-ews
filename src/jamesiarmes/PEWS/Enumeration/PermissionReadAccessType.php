@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_PermissionReadAccessType.
+ * Contains \jamesiarmes\PEWS\Enumeration\PermissionReadAccessType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Indicates whether a user has permission to read items within a folder.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_PermissionReadAccessType extends EWSType
+class PermissionReadAccessType extends Enumeration
 {
     /**
      * Indicates that the user has permission to read all items in the folder.
@@ -28,21 +32,4 @@ class EWSType_PermissionReadAccessType extends EWSType
      * @var string
      */
     const NONE = 'None';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

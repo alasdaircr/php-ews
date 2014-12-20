@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWS_AppointmentStateType.
+ * Contains \jamesiarmes\PEWS\Enumeration\AppointmentState.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Specifies the status of the appointment.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWS_AppointmentStateType extends EWSType
+class AppointmentState extends Enumeration
 {
     /**
      * This appointment has been canceled.
@@ -56,21 +60,4 @@ class EWS_AppointmentStateType extends EWSType
      * @var string
      */
     const RECEIVED = 2;
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

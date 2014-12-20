@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_BodyTypeResponseType.
+ * Contains \jamesiarmes\PEWS\Enumeration\BodyTypeResponseType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines how the body text is formatted in the response.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_BodyTypeResponseType extends EWSType
+class BodyTypeResponseType extends Enumeration
 {
     /**
      * The response will return the richest available content of body text.
@@ -43,21 +47,4 @@ class EWSType_BodyTypeResponseType extends EWSType
      * @var string
      */
     const TEXT = 'Text';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

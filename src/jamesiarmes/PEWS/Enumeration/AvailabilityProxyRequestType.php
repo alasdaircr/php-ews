@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_AvailabilityProxyRequestType.
+ * Contains \jamesiarmes\PEWS\Enumeration\AvailabilityProxyRequestType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines whether a proxy request is a cross-site or a cross-forest request.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_AvailabilityProxyRequestType extends EWSType
+class AvailabilityProxyRequestType extends Enumeration
 {
     /**
      * Indicates that this request is cross-forest.
@@ -27,21 +31,4 @@ class EWSType_AvailabilityProxyRequestType extends EWSType
      * @var string
      */
     const CROSS_SITE = 'CrossSite';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

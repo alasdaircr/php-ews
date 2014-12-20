@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_DelegateFolderPermissionLevelType.
+ * Contains \jamesiarmes\PEWS\Enumeration\DelegateFolderPermissionLevelType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Contains the permissions for a default folder.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_DelegateFolderPermissionLevelType extends EWSType
+class DelegateFolderPermissionLevelType extends Enumeration
 {
     /**
      * The delegate user can read and create items in the folder.
@@ -54,21 +58,4 @@ class EWSType_DelegateFolderPermissionLevelType extends EWSType
      * @var string
      */
     const REVIEWER = 'Reviewer';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

@@ -65,7 +65,7 @@ class EWSType_CalendarItemType extends EWSType_ItemType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_AppointmentStateType
+     * @var \jamesiarmes\PEWS\Enumeration\AppointmentState
      */
     public $AppointmentState;
 
@@ -93,7 +93,7 @@ class EWSType_CalendarItemType extends EWSType_ItemType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_CalendarItemTypeType
+     * @var \jamesiarmes\PEWS\Enumeration\CalendarItemTypeType
      */
     public $CalendarItemType;
 
@@ -113,7 +113,7 @@ class EWSType_CalendarItemType extends EWSType_ItemType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_ConferenceTypeType
+     * @var \jamesiarmes\PEWS\Enumeration\ConferenceType
      */
     public $ConferenceType;
 
@@ -506,7 +506,7 @@ class EWSType_CalendarItemType extends EWSType_ItemType
      *
      * @since Exchange 2007
      *
-     * @var EWSType_LegacyFreeBusyType
+     * @var \jamesiarmes\PEWS\Enumeration\LegacyFreeBusyType
      */
     public $LegacyFreeBusyStatus;
 

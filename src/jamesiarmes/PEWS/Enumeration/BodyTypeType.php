@@ -1,14 +1,18 @@
 <?php
 /**
- * Contains EWSType_BodyTypeType.
+ * Contains \jamesiarmes\PEWS\Enumeration\BodyTypeType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Specifies the type of an item body.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_BodyTypeType extends EWSType
+class BodyTypeType extends Enumeration
 {
     /**
      * Indicates that the body is in HTML.
@@ -27,21 +31,4 @@ class EWSType_BodyTypeType extends EWSType
      * @var string
      */
     const TEXT = 'Text';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }

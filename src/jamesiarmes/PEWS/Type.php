@@ -1,14 +1,16 @@
 <?php
 /**
- * Contains EWSType.
+ * Contains \jamesiarmes\PEWS\Type.
  */
+
+namespace jamesiarmes\PEWS;
 
 /**
  * Base class for Exchange Web Service Types.
  *
  * @package php-ews\Types
  */
-abstract class EWSType
+abstract class Type
 {
     /**
      * Clones any object properties on a type object when it is cloned. Allows

@@ -1,15 +1,19 @@
 <?php
 /**
- * Contains EWSType_BasePointType.
+ * Contains \jamesiarmes\PEWS\Enumeration\IndexBasePointType.
  */
+
+namespace jamesiarmes\PEWS\Enumeration;
+
+use jamesiarmes\PEWS\Enumeration;
 
 /**
  * Defines whether a page of items or conversations will start from the
  * beginning or the end of a set.
  *
- * @package php-ews\Enumerations
+ * @package php-ews\Enumeration
  */
-class EWSType_BasePointType extends EWSType
+class IndexBasePointType extends Enumeration
 {
     /**
      * The paged view starts at the beginning of the found conversation or item
@@ -29,21 +33,4 @@ class EWSType_BasePointType extends EWSType
      * @var string
      */
     const END = 'End';
-
-    /**
-     * Element value.
-     *
-     * @var string
-     */
-    public $_;
-
-    /**
-     * Returns the value of this object as a string.
-     *
-     * @return string
-     */
-    public function __toString()
-    {
-        return $this->_;
-    }
 }
