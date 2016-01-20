@@ -68,14 +68,6 @@ class ContactAPI extends API
         }
 
         $item = array('ContactItem' => $items);
-        $defaultOptions = array(
-            'SendMeetingInvitations' => Enumeration\ContactItemCreateOrDeleteOperationType::SEND_TO_NONE,
-            'SavedItemFolderId' => array(
-                'FolderId' => $this->getFolderId()->toXmlObject()
-            )
-        );
-
-        $options = array_replace_recursive($defaultOptions, $options);
 
         $items = $this->createItems($item, $options);
 
