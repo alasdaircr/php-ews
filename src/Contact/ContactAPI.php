@@ -67,7 +67,7 @@ class ContactAPI extends API
             $items = array($items);
         }
 
-        $item = array('ContactItem' => $items);
+        $item = array('Contact' => $items);
 
         $items = $this->createItems($item, $options);
 
